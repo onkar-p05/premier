@@ -1,0 +1,913 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "DM sans";
+}
+
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    width: 100%;
+    height: 5.5vw;
+    padding-top: 0.1px;
+    margin-top: 5vh;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav1 {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 2px solid #000;
+}
+
+#nav2 {
+    height: 100%;
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1%;
+    border-right: 2px solid #000;
+}
+
+#nav3 {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1%;
+    border-right: 2px solid #000;
+}
+
+#nav4 {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10%;
+}
+
+#nav2 h2 {
+    margin-left: -50%;
+}
+
+#nav3 h2 {
+    margin-left: -27%;
+}
+
+#nav1 h1 {
+    font-family: "Archivo Black";
+    font-weight: bolder;
+    letter-spacing: -2px;
+    font-size: 2.9vw;
+    position: relative;
+}
+
+#nav h1::after {
+    content: "©";
+    font-weight: 600;
+    font-size: 1.3vw;
+    position: absolute;
+    top: 0;
+    left: 102%;
+}
+
+#nav h1::before {
+    content: "model managment";
+    font-weight: 500;
+    font-size: 0.8vw;
+    letter-spacing: 0.03vw;
+    position: absolute;
+    top: 72%;
+    right: 3%;
+    color: #797676;
+}
+
+#nav h2 {
+    font-weight: 600;
+    font-size: 1.8vw;
+}
+
+#center {
+    height: 100%;
+    width: 100%;
+    padding: 3vw;
+    position: relative;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#content video {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+
+#overplay {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+}
+
+#over1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+#over1 h1 {
+    font-family: "Archivo Black";
+    font-size: 5vw;
+    line-height: 5vw;
+}
+
+#over1 h1:hover {
+    -webkit-text-stroke: 2px #f1f1f1;
+    color: transparent;
+}
+
+#over1 h2 {
+    border: 1px solid #fff;
+    padding: 2vw 2vw;
+    border-radius: 25% 75% 75% 25% / 75% 75% 25% 25%;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+#over1 h2::after {
+    content: "Slae here";
+    height: 6.5vw;
+    width: 6.5vw;
+    background-color: #ffffff6b;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all linear 1s;
+    border-radius: 50%;
+}
+
+#over1 h2:hover::after {
+    transform: translate(-50%, -50%) scale(3);
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    transition: all linear 1s;
+}
+
+#over1 h2:hover {
+    color: #00000000;
+    transition: all linear 0.1s;
+}
+
+#over2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-top: 2px solid #fff;
+    width: 100%;
+    height: 5vw;
+    margin-top: 2vw;
+}
+
+#over2 h2 {
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+#over2 img {
+    height: 5vw;
+}
+
+#scroll {
+    height: 45vh;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#container {
+    height: 95%;
+    width: 128.8%;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#container img {
+    height: 90%;
+    border-radius: 62% 38% 86% 14% / 40% 75% 25% 60%;
+    width: 15vw;
+    margin: 1.55vw;
+    object-fit: cover;
+    object-position: 30%, 30%;
+}
+
+#scroll:hover img {
+    scale: 1.2;
+    transition: all ease 1s;
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet {
+    height: 6vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 4.5vw;
+    border-top: 0.2vw solid #302f2fd7;
+    border-bottom: 0.2vw solid #302f2fd7;
+}
+
+#alphabet h5 {
+    font-size: 1.8vw;
+    font-weight: 500;
+    border-bottom: 1.9px solid #000;
+    margin-right: 2vw;
+}
+
+#alphabet h5:hover {
+    scale: 1.5;
+    transition: all ease 1s;
+}
+
+#alphabet h6 {
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0.3vw;
+    border: 1px solid #00000000;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    color: #000;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+#alphabet h6:hover {
+    border: 1px solid #000;
+    color: #242323;
+    scale: 1.5;
+    font-weight: 600;
+    transition: all ease 0.6s;
+}
+
+#page2 {
+    height: 120%;
+    width: 100%;
+    padding: 2vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page2-part1 {
+    height: 83%;
+    width: 55%;
+    overflow: hidden;
+}
+
+#page2-part1:hover img {
+    scale: 1.2;
+    transition: all ease 1s;
+}
+
+#page2-part1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#shot h2 {
+    text-transform: uppercase;
+    padding: 0.5vw 0;
+    font-family: "Archivo Black";
+}
+
+#page2-part2 {
+    height: 83%;
+    width: 35%;
+    overflow: hidden;
+}
+
+#page2-part2 img {
+    object-fit: cover;
+    height: 83%;
+    width: 100%;
+    object-position: center;
+}
+
+#page2-part2:hover img {
+    scale: 1.2;
+    transition: all ease 1s;
+}
+
+#page2-part2-text2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.2vw;
+}
+
+#page2-part2-text2 h5 {
+    font-weight: 600;
+    font-size: 1.26vw;
+}
+
+#page2-part2-text2 h6 {
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+    padding-left: 9vw;
+}
+
+#page3-part1 {
+    height: 40%;
+    width: 20%;
+    position: relative;
+}
+
+#page3-part1 #rotet {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    margin-top: -5vw;
+}
+
+#page3-part1-text1 {
+    white-space: nowrap;
+    margin-top: 12vw;
+    margin-left: -3vw;
+}
+
+#page3-part1-text1 h3 {
+    font-weight: 500;
+}
+
+#page3-part2 {
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+}
+
+#page3-part2 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: 30% 30%;
+}
+
+#page3-part2:hover img {
+    scale: 1.2;
+    transition: all ease 1s;
+}
+
+#page4 {
+    width: 100%;
+    height: 100%;
+}
+
+#page4 img {
+    height: 80%;
+    width: 100%;
+    padding: 4vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+#page4:hover img {
+    scale: 1.2;
+    transition: all ease 1s;
+}
+
+#updetes {
+    font-family: "Archivo Black";
+    text-align: center;
+    padding-top: 1.5vw;
+    font-size: 1.9vw;
+    letter-spacing: -2px;
+    overflow: hidden;
+    position: relative;
+    height: 3vw;
+    width: 100%;
+}
+
+#updetes h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#updetes:hover h2 {
+    animation-name: updets;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+}
+
+@keyframes updets {
+    from {
+        top: 0;
+    }
+    to {
+        top: 10vw;
+    }
+}
+
+#page5 {
+    width: 100%;
+    height: 100%;
+    padding: 0 4vw;
+}
+
+.elem {
+    height: 18vh;
+    width: 100%;
+    border-top: 2px solid #000;
+    padding: 0 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: #fff;
+}
+
+.elem img {
+    height: 1vw;
+    width: 1vw;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    left: 17%;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.elem:hover img {
+    opacity: 1;
+    left: 24%;
+    height: 8.5vw;
+    width: 8.5vw;
+    transition: all ease 0.9s;
+}
+
+.elem:hover {
+    background-color: #c7c7c7;
+}
+
+#page5 .elem:nth-last-child(1) {
+    border-bottom: 2px solid #000;
+}
+
+#page5 .elem h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 2.9vh;
+}
+
+#page5 .elem-part2 {
+    width: 40%;
+    line-height: 3.8vh;
+}
+
+#page5 .elem-part2 h1 {
+    font-weight: 500;
+}
+
+#page5 .elem-part2 h4 {
+    color: #353535;
+    font-weight: 500;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+}
+
+#page6 {
+    height: 80%;
+    width: 100%;
+    margin-top: -5vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6vw;
+}
+
+#im1 {
+    height: 100%;
+    width: 70vw;
+    object-fit: cover;
+}
+
+#im2 {
+    height: 40vh;
+    width: 22vw;
+    object-fit: cover;
+}
+
+#img2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 vw;
+}
+
+#im3 {
+    height: 40vh;
+    width: 22vw;
+    object-fit: cover;
+    margin-left: 1vw;
+}
+
+#img2-text {
+    position: absolute;
+    left: 47%;
+}
+
+#img2-text h1 {
+    font-family: "Archivo Black";
+    font-size: 3.2vw;
+    letter-spacing: -2px;
+}
+
+#img2-text h3 {
+    margin-top: 2vw;
+    font-size: 1.6vw;
+}
+
+#img2-text h5 {
+    font-size: 1vw;
+    margin-top: 3vw;
+    font-weight: 600;
+}
+
+#page7 #hov {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    padding: 3vw 3vw;
+    padding-top: 7vw;
+}
+
+#page7-img2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#in1 img {
+    height: 120vh;
+    width: 55vw;
+    object-fit: cover;
+}
+
+#in2 img {
+    height: 90vh;
+    width: 40vw;
+    object-fit: cover;
+}
+
+#in2-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+    margin-top: 2vw;
+}
+
+#in2-text h2 {
+    font-weight: 500;
+}
+
+#in2-text h5 {
+    font-weight: 500;
+}
+
+#marque {
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-top: 6vw;
+    background-color: transparent;
+}
+
+#marque h1 {
+    display: inline-block;
+    font-weight: 800;
+    font-family: "Archivo Black";
+    font-size: 5vw;
+    letter-spacing: 0.2vw;
+    padding: 1vw;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#marque:hover h1 {
+    font-weight: bold;
+    color: #fff;
+}
+
+#marque:hover {
+    background-color: #c4c4c4;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 4px));
+    }
+}
+
+#div2 {
+    height: 4vh;
+    width: 100%;
+}
+
+#div {
+    display: flex;
+    padding: 6vw 4vw;
+    margin-top: 2vw;
+}
+
+#div #font {
+    width: 20%;
+    margin-top: 1.5vw;
+}
+
+#div #font h2 {
+    text-transform: uppercase;
+    font-family: "Archivo Black";
+    font-size: 3vw;
+}
+
+#div-img1 {
+    width: 40%;
+    height: 40vw;
+    position: relative;
+    white-space: nowrap;
+}
+
+#div-img1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 9vw;
+    margin-left: -3vw;
+    padding: 0 1vw;
+}
+
+#div-img1 h2 {
+    width: 100%;
+    height: 30%;
+    font-size: 1.6vw;
+    font-weight: 500;
+    position: absolute;
+}
+
+#div-img2 {
+    width: 40%;
+    height: 40vw;
+    position: relative;
+    white-space: nowrap;
+}
+
+#div-img2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 9vw;
+    margin-left: -3vw;
+    padding: 0 1vw;
+}
+
+#div-img2 h2 {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+
+#end-footer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    margin-top: 9vw;
+}
+
+#one {
+    padding: 2vw 4vw;
+    padding-left: 7vw;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 13vw;
+    border-right: 2px solid #000;
+}
+
+#one h1 {
+    font-family: "Archivo Black";
+    letter-spacing: -3px;
+    font-weight: bolder;
+    position: relative;
+    font-size: 2.8vw;
+}
+
+#one h1::after {
+    content: "©";
+    color: #5d5959;
+    font-size: 1.2vw;
+    position: absolute;
+    right: -11%;
+    font-weight: 500;
+}
+
+#one h1::before {
+    content: "model managment";
+    font-family: "rotobo";
+    font-weight: 500;
+    font-size: 0.85vw;
+    letter-spacing: 0.05vw;
+    position: absolute;
+    top: 72%;
+    right: -4%;
+    color: #797676;
+}
+
+#one h2 {
+    font-weight: 600;
+}
+
+#two {
+    padding: 2vw 0;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+}
+
+#two h2 {
+    font-weight: 600;
+}
+
+#three {
+    padding: 2vw 0;
+    padding-right: 9vw;
+    border-left: 2px solid #000;
+    width: 45%;
+}
+
+#three h2 {
+    font-weight: 600;
+}
+
+#three h4 {
+    color: #494545;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+#three1 {
+    width: 45vw;
+    height: 4vw;
+    border-bottom: 2px solid #000;
+    padding: 0 3vw;
+}
+
+#three2 {
+    padding: 0 3vw;
+}
+
+#three2 #logo {
+    padding: 2vw 0;
+    margin-left: -1vw;
+}
+
+#three2 #logo i {
+    margin-left: 1vw;
+    font-size: 1.7vw;
+}
+
+#three2 #logo i:hover {
+    color: #494545;
+}
+
+#three2 #logo i:nth-child(1) {
+    color: #FE038F;
+}
+
+#three2 #logo i:nth-child(2) {
+    color: #1DA1F2;
+}
+
+#three2 #logo i:nth-child(3) {
+    color: #0866FF;
+}
+
+#three2 #logo i:nth-child(4) {
+    color: #FF0000;
+}
+
+#three2 #logo i:nth-child(5) {
+    color: #0a65c0;
+}
+
+#instaa {
+    text-decoration: none;
+}
+
+#three2 #logo i:nth-child(1):hover {
+    color: #494545;
+}
+
+#three2 #logo i:nth-child(2):hover {
+    color: #494545;
+}
+
+#three2 #logo i:nth-child(3):hover {
+    color: #494545;
+}
+
+#three2 #logo i:nth-child(4):hover {
+    color: #494545;
+}
+
+#three2 #logo i:nth-child(5):hover {
+    color: #494545;
+}
