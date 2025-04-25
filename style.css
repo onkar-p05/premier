@@ -889,10 +889,6 @@ body {
     color: #494545;
 }
 
-/* #three2 #logo i:nth-child(1) {
-    color: #fe038f;
-} */
-
 #three2 #logo i:nth-child(2) {
     color: #1da1f2;
 }
@@ -933,8 +929,8 @@ body {
 #three2 #logo i:nth-child(5):hover {
     color: #494545;
 }
-#col1{
-  
+
+#col1{ 
   text-decoration: none;
   color: #0A66C2;
 }
