@@ -868,11 +868,6 @@ body {
 #three2 #logo i:hover {
     color: #494545;
 }
-
-#three2 #logo i:nth-child(1) {
-    color: #FE038F;
-}
-
 #three2 #logo i:nth-child(2) {
     color: #1DA1F2;
 }
@@ -891,6 +886,7 @@ body {
 
 #instaa {
     text-decoration: none;
+    color: #fe038f; 
 }
 
 #three2 #logo i:nth-child(1):hover {
@@ -911,4 +907,13 @@ body {
 
 #three2 #logo i:nth-child(5):hover {
     color: #494545;
+}
+
+#col1{
+  text-decoration: none;
+  color: #0A66C2;
+}
+
+#col1:hover{
+  color: gray;
 }
